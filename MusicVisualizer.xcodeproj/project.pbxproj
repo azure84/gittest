@@ -13,6 +13,10 @@
 		BCBBAB531A5163C20008F3A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBBAB521A5163C20008F3A7 /* Images.xcassets */; };
 		BCBBAB561A5163C20008F3A7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCBBAB541A5163C20008F3A7 /* LaunchScreen.xib */; };
 		BCBBAB621A5163C20008F3A7 /* MusicVisualizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBBAB611A5163C20008F3A7 /* MusicVisualizerTests.swift */; };
+		BCBBAB6C1A5163DA0008F3A7 /* Let It Go.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BCBBAB6B1A5163DA0008F3A7 /* Let It Go.m4a */; };
+		BCBBAB721A5168C40008F3A7 /* particleTexture.png in Resources */ = {isa = PBXBuildFile; fileRef = BCBBAB711A5168C40008F3A7 /* particleTexture.png */; };
+		BCBBAB761A5169080008F3A7 /* VisulizerView.mm in Sources */ = {isa = PBXBuildFile; fileRef = BCBBAB751A5169080008F3A7 /* VisulizerView.mm */; };
+		BCBBAB791A516B240008F3A7 /* MeterTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BCBBAB781A516B240008F3A7 /* MeterTable.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,13 @@
 		BCBBAB5B1A5163C20008F3A7 /* MusicVisualizerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicVisualizerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBBAB601A5163C20008F3A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCBBAB611A5163C20008F3A7 /* MusicVisualizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicVisualizerTests.swift; sourceTree = "<group>"; };
+		BCBBAB6B1A5163DA0008F3A7 /* Let It Go.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Let It Go.m4a"; sourceTree = "<group>"; };
+		BCBBAB711A5168C40008F3A7 /* particleTexture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particleTexture.png; sourceTree = "<group>"; };
+		BCBBAB731A5169070008F3A7 /* MusicVisualizer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MusicVisualizer-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCBBAB741A5169080008F3A7 /* VisulizerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VisulizerView.h; sourceTree = "<group>"; };
+		BCBBAB751A5169080008F3A7 /* VisulizerView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VisulizerView.mm; sourceTree = "<group>"; };
+		BCBBAB771A516B240008F3A7 /* MeterTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterTable.h; sourceTree = "<group>"; };
+		BCBBAB781A516B240008F3A7 /* MeterTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeterTable.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +88,19 @@
 		BCBBAB481A5163C20008F3A7 /* MusicVisualizer */ = {
 			isa = PBXGroup;
 			children = (
+				BCBBAB711A5168C40008F3A7 /* particleTexture.png */,
 				BCBBAB4B1A5163C20008F3A7 /* AppDelegate.swift */,
+				BCBBAB771A516B240008F3A7 /* MeterTable.h */,
+				BCBBAB781A516B240008F3A7 /* MeterTable.cpp */,
+				BCBBAB741A5169080008F3A7 /* VisulizerView.h */,
+				BCBBAB751A5169080008F3A7 /* VisulizerView.mm */,
+				BCBBAB6B1A5163DA0008F3A7 /* Let It Go.m4a */,
 				BCBBAB4D1A5163C20008F3A7 /* ViewController.swift */,
 				BCBBAB4F1A5163C20008F3A7 /* Main.storyboard */,
 				BCBBAB521A5163C20008F3A7 /* Images.xcassets */,
 				BCBBAB541A5163C20008F3A7 /* LaunchScreen.xib */,
 				BCBBAB491A5163C20008F3A7 /* Supporting Files */,
+				BCBBAB731A5169070008F3A7 /* MusicVisualizer-Bridging-Header.h */,
 			);
 			path = MusicVisualizer;
 			sourceTree = "<group>";
@@ -161,6 +179,14 @@
 				TargetAttributes = {
 					BCBBAB451A5163C20008F3A7 = {
 						CreatedOnToolsVersion = 6.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					BCBBAB5A1A5163C20008F3A7 = {
 						CreatedOnToolsVersion = 6.1;
@@ -193,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBBAB511A5163C20008F3A7 /* Main.storyboard in Resources */,
+				BCBBAB721A5168C40008F3A7 /* particleTexture.png in Resources */,
+				BCBBAB6C1A5163DA0008F3A7 /* Let It Go.m4a in Resources */,
 				BCBBAB561A5163C20008F3A7 /* LaunchScreen.xib in Resources */,
 				BCBBAB531A5163C20008F3A7 /* Images.xcassets in Resources */,
 			);
@@ -212,8 +240,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCBBAB791A516B240008F3A7 /* MeterTable.cpp in Sources */,
 				BCBBAB4E1A5163C20008F3A7 /* ViewController.swift in Sources */,
 				BCBBAB4C1A5163C20008F3A7 /* AppDelegate.swift in Sources */,
+				BCBBAB761A5169080008F3A7 /* VisulizerView.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,9 +366,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVisualizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVisualizer/MusicVisualizer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -346,9 +379,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MusicVisualizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MusicVisualizer/MusicVisualizer-Bridging-Header.h";
 			};
 			name = Release;
 		};
